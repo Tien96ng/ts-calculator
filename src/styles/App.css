@@ -1,0 +1,16 @@
+.app-container {
+    background-color: black;
+    color: white;
+}
+
+.num {
+    background-color: darkgrey;
+}
+
+.symbol {
+    background-color: orange;
+}
+
+.extra {
+    background-color: lightgrey;
+}
