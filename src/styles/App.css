@@ -1,16 +1,30 @@
 .app-container {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
+  text-align: center;
 }
 
-.num {
-    background-color: darkgrey;
+.num,
+.zero {
+  background-color: darkgrey;
 }
 
 .symbol {
-    background-color: orange;
+  background-color: orange;
 }
 
 .extra {
-    background-color: lightgrey;
+  background-color: lightgrey;
+}
+
+.zero {
+  text-align: start;
+}
+
+.button {
+  border-radius: 40px;
+}
+
+.display {
+    text-align: end;
 }
