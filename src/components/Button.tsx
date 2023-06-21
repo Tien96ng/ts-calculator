@@ -16,9 +16,9 @@ export default function Button() {
 }
 
 const buttonArr = [
-    ["0", "num"], [".", "num"], ["=", "symbol"],
-    ["1", "num"], ["2", "num"], ["9", "symbol"], ["+", "symbol"],
-    ["4", "num"], ["5", "num"], ["6", "symbol"], ["-", "symbol"],
-    ["7", "num"], ["8", "num"], ["3", "symbol"], ["x", "symbol"],
-    ["AC", "extra"], ["±", "extra"], ["%", "extra"], ["÷", "symbol"]
+    ["AC", "extra"], ["±", "extra"], ["%", "extra"], ["÷", "symbol"],
+    ["7", "num"], ["8", "num"], ["3", "num"], ["x", "symbol"],
+    ["4", "num"], ["5", "num"], ["6", "num"], ["-", "symbol"],
+    ["1", "num"], ["2", "num"], ["9", "num"], ["+", "symbol"],
+    ["0", "num"], [".", "num"], ["=", "symbol"] 
 ]
