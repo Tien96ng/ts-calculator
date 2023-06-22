@@ -1,9 +1,10 @@
 import { Row, Col } from "react-bootstrap";
 
-export default function Button() {
+export default function Button({buttonPress}) {
   const renderButtons = buttonArr.map((x, y) => {
+    // console.log(isNaN(x[0]), x[0]);
     return (
-      <Col className={`${x[1]} button`} key={y} xs={x[0] === "0" ? 6 : 3}>
+      <Col className={`${x[1]} button`} key={y} xs={x[0] === "0" ? 6 : 3} onClick={() => buttonPress(x[0])}>
         {x[0]}
       </Col>
     );
@@ -33,3 +34,4 @@ const buttonArr: string[][] = [
   [".", "num"],
   ["=", "symbol"],
 ];
+
