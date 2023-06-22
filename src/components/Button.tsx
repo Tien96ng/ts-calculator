@@ -1,6 +1,6 @@
 import { Row, Col } from "react-bootstrap";
 
-export default function Button({buttonPress}) {
+export default function Button({ buttonPress }) {
   const renderButtons = buttonArr.map((x, y) => {
     // console.log(isNaN(x[0]), x[0]);
     return (

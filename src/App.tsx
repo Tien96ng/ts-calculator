@@ -1,32 +1,44 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Button from "./components/Button";
 import { Container, Row , Col} from "react-bootstrap";
 import "./styles/App.css";
 
 function App() {
-  // Using an array to display, current number, prev number, and total in that order.
-  const [numsArr, setNumsArr] = useState([0, null, null]);
+  const [prev, setPrev] = useState(null);
+  const [curr, setCurr] = useState(0);
+  const [total, setTotal] = useState(null);
   const [symbol, setSymbol] = useState("");
 
   // Make special case foe AC, +/-, . and =
   // NEED TO FINISH EQUAL SIGN AND DECIMAL
-  const buttonPress = (val: any) => {
+  const buttonPress = (val: string) => {
     console.log(val);
     if (isNaN(val)) {
       if (val === "AC") {
-        setNumsArr([0, null, null]);
+        setNumsArr(["0", null, null]);
         setSymbol("");
+      } else {
+        setSymbol(val);
       }
     } else {
-      setNumsArr([val, null, null])
+     //
+      
     }
   };
+
+  const displayScreen = () => {
+    if(total === null) {
+      return curr;
+    } else {
+      return total;
+    }
+  }
 
   return (
     <>
       <Container className="app-container">
         <Row>
-          <Col className="display" xs={12}> {numsArr[0]} </Col>
+          <Col className="display" xs={12}> {displayScreen()} </Col>
         </Row>
         <Button 
           buttonPress={buttonPress}
